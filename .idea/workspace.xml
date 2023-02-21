@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e42f2c29-e0f9-48b1-bb02-78dce0eb9d3a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/cmd/api/controller/feed.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/api/controller/param.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/api/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/rpc/feed.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/rpc/init.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/apiConfig.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/commentConfig.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/dbConfig.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/favoriteConfig.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/feedConfig.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/logConfig.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/messageConfig.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/minioConfig.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/otel-collector-config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/publishConfig.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/relationConfig.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/userConfig.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/videoConfig.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dal/db/comment.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dal/db/favorite.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dal/db/feed.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dal/db/init.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dal/db/message.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dal/db/publish.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dal/db/relation.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dal/db/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dal/init.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dal/pack/comment.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dal/pack/favorite.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dal/pack/feed.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dal/pack/message.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dal/pack/relation.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dal/pack/resp.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dal/pack/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/idl/feed.thrift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/errno/code.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/errno/errno.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/jwt/jwt.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/ttviper/config.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go Application" />
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file:///usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2M3cgVbRSIXQE7KAMEGtRmXZCcT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/taowei/Desktop/go/simpletk/cmd/rpc",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cmd/rpc" />
+      <recent name="$PROJECT_DIR$/cmd/api/controller" />
+      <recent name="$PROJECT_DIR$/pkg" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pkg/errno" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>
