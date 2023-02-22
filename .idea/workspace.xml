@@ -5,46 +5,90 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e42f2c29-e0f9-48b1-bb02-78dce0eb9d3a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cmd/api/controller/feed.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmd/api/controller/param.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmd/api/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmd/rpc/feed.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmd/rpc/init.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/apiConfig.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/commentConfig.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/dbConfig.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/favoriteConfig.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/feedConfig.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/logConfig.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/messageConfig.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/minioConfig.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/otel-collector-config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/publishConfig.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/relationConfig.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/userConfig.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/videoConfig.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal/db/comment.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal/db/favorite.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal/db/feed.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal/db/init.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal/db/message.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal/db/publish.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal/db/relation.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal/db/user.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal/init.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal/pack/comment.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal/pack/favorite.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal/pack/feed.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal/pack/message.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal/pack/relation.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal/pack/resp.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal/pack/user.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/idl/feed.thrift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/errno/code.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/errno/errno.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/jwt/jwt.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/ttviper/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/simpletk.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/thriftCompiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/api/controller/comment.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/api/controller/favorite.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/api/controller/message.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/api/controller/publish.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/api/controller/relation.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/api/controller/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/api/rpc/comment.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/api/rpc/favorite.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/api/rpc/feed.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/api/rpc/message.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/api/rpc/publish.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/api/rpc/relation.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/api/rpc/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/comment/build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/comment/command/command_action.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/comment/command/command_list.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/comment/handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/comment/kitex.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/comment/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/comment/script/bootstrap.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/favorite/build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/favorite/handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/favorite/kitex.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/favorite/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/favorite/script/bootstrap.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/feed/build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/feed/handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/feed/kitex.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/feed/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/feed/script/bootstrap.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/message/build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/message/handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/message/kitex.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/message/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/message/script/bootstrap.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/publish/build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/publish/handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/publish/kitex.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/publish/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/publish/script/bootstrap.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/relation/build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/relation/handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/relation/kitex.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/relation/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/relation/script/bootstrap.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/user/build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/user/handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/user/kitex.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/user/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/user/script/bootstrap.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/idl/comment.thrift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/idl/favorite.thrift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/idl/message.thrift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/idl/publish.thrift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/idl/relation.thrift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/idl/user.thrift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/dlog/encoder.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/dlog/log.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/dlog/zapgorm2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/middleware/client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/middleware/common.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/middleware/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/api/controller/feed.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/api/controller/feed.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/api/controller/param.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/api/controller/param.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/api/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/api/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/rpc/feed.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/rpc/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/api/rpc/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dal/db/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/dal/db/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dal/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/dal/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dal/pack/comment.go" beforeDir="false" afterPath="$PROJECT_DIR$/dal/pack/comment.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dal/pack/favorite.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dal/pack/feed.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dal/pack/message.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dal/pack/relation.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dal/pack/resp.go" beforeDir="false" afterPath="$PROJECT_DIR$/dal/pack/resp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dal/pack/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/dal/pack/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/jwt/jwt.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/jwt/jwt.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/ttviper/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/ttviper/config.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,40 +111,51 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2M3cgVbRSIXQE7KAMEGtRmXZCcT" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "DefaultGoTemplateProperty": "Go File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/taowei/Desktop/go/simpletk/cmd/rpc",
+    "last_opened_file_path": "/Users/taowei/Desktop/go/simpletk/dal/pack",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dal/pack" />
+      <recent name="$PROJECT_DIR$/cmd/comment" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/cmd/rpc" />
       <recent name="$PROJECT_DIR$/cmd/api/controller" />
-      <recent name="$PROJECT_DIR$/pkg" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cmd/api" />
       <recent name="$PROJECT_DIR$/pkg/errno" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

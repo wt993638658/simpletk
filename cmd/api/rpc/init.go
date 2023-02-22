@@ -7,9 +7,9 @@ func InitRPC(Config *ttviper.Config) {
 	//UserConfig := ttviper.ConfigInit("TIKTOK_USER", "userConfig")
 	//initUserRpc(&UserConfig)
 
-	//FeedConfig := ttviper.ConfigInit("TIKTOK_FEED", "feedConfig")
-	//initFeedRpc(&FeedConfig)
-	//
+	FeedConfig := ttviper.ConfigInit("TIKTOK_FEED", "feedConfig")
+	initFeedRpc(&FeedConfig)
+
 	//PublishConfig := ttviper.ConfigInit("TIKTOK_PUBLISH", "publishConfig")
 	//initPublishRpc(&PublishConfig)
 	//

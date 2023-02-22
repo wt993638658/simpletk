@@ -3,7 +3,7 @@ package controller
 import (
 	"context"
 	"github.com/gin-gonic/gin"
-	"github.com/wt993638658/simpletk/cmd/rpc"
+	"github.com/wt993638658/simpletk/cmd/api/rpc"
 	"github.com/wt993638658/simpletk/dal/pack"
 	"github.com/wt993638658/simpletk/kitex_gen/feed"
 	"github.com/wt993638658/simpletk/pkg/errno"

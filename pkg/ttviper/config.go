@@ -1,6 +1,7 @@
 package ttviper
 
 import (
+	"encoding/json"
 	"fmt"
 	"github.com/cloudwego/kitex/pkg/klog"
 	"github.com/fsnotify/fsnotify"
@@ -128,17 +129,17 @@ func (v *Config) WatchRemoteConf() {
 	}
 }
 
-// // ZapLogConfig 读取Log的配置文件，并返回
-//
-//	func (v *Config) ZapLogConfig() []byte {
-//		log := v.Viper.Sub("Log")
-//		logConfig, err := json.Marshal(log.AllSettings())
-//		if err != nil {
-//			klog.Fatalf("error marshalling log config %s", err)
-//		}
-//		return logConfig
-//	}
-//
+// ZapLogConfig 读取Log的配置文件，并返回
+
+func (v *Config) ZapLogConfig() []byte {
+	log := v.Viper.Sub("Log")
+	logConfig, err := json.Marshal(log.AllSettings())
+	if err != nil {
+		klog.Fatalf("error marshalling log config %s", err)
+	}
+	return logConfig
+}
+
 // ConfigInit initializes the configuration
 func ConfigInit(envPrefix string, cfgName string) Config {
 	pflag.Parse()

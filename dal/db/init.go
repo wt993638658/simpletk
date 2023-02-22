@@ -27,9 +27,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/a76yyyy/tiktok/pkg/dlog"
-	"github.com/a76yyyy/tiktok/pkg/ttviper"
 	"github.com/uptrace/opentelemetry-go-extra/otelgorm"
+	"github.com/wt993638658/simpletk/pkg/dlog"
+	"github.com/wt993638658/simpletk/pkg/ttviper"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )

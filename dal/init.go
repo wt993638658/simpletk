@@ -1,7 +1,7 @@
 package dal
 
 import (
-	db "github.com/a76yyyy/tiktok/dal/db"
+	db "github.com/wt993638658/simpletk/dal/db"
 )
 
 // Init init dal
