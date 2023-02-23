@@ -1,4 +1,5 @@
 namespace go feed
+include "user.thrift"
 
 struct douyin_feed_request {
     1: optional i64 latest_time // 可选参数，限制返回视频的最新投稿时间戳，精确到秒，不填表示当前时间
@@ -20,16 +21,16 @@ struct video_id_request{
     2:i64 search_id
 }
 
-struct User {
-    1:i64 id  // 用户id
-    2:string name // 用户名称
-    3:optional i64 follow_count // 关注总数
-    4:optional i64 follower_count  // 粉丝总数
-    5:bool is_follow // true-已关注，false-未关注
-}
+//struct User {
+//    1:i64 id  // 用户id
+//    2:string name // 用户名称
+//    3:optional i64 follow_count // 关注总数
+//    4:optional i64 follower_count  // 粉丝总数
+//    5:bool is_follow // true-已关注，false-未关注
+//}
 struct Video {
     1:i64 id  // 视频唯一标识
-    2:User author   // 视频作者信息
+    2:user.User author   // 视频作者信息
     3:string play_url   // 视频播放地址
     4:string cover_url   // 视频封面地址
     5:i64 favorite_count   // 视频的点赞总数

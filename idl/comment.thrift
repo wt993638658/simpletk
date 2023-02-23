@@ -1,5 +1,7 @@
 namespace go comment
 
+include "user.thrift"
+
 struct douyin_comment_action_request {
     1:i64 user_id  // 用户id
     2:string token  // 用户鉴权token
@@ -28,17 +30,11 @@ struct douyin_comment_list_response {
 
 struct Comment {
     1:i64 id  // 视频评论id
-    2:User user  // 评论用户信息
+    2:user.User user  // 评论用户信息
     3:string content  // 评论内容
     4:string create_date  // 评论发布日期，格式 mm-dd
 }
-struct User {
-    1:i64 id  // 用户id
-    2:string name  // 用户名称
-    3:optional i64 follow_count  // 关注总数
-    4:optional i64 follower_count // 粉丝总数
-    5:bool is_follow  // true-已关注，false-未关注
-}
+
 service CommentSrv{
     douyin_comment_action_response CommentAction(1:douyin_comment_action_request req) //评论操作
     douyin_comment_list_response CommentList(1:douyin_comment_list_request req) //返回评论列表

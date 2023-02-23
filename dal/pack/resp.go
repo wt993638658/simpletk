@@ -2,14 +2,14 @@ package pack
 
 import (
 	"errors"
-	"github.com/wt993638658/simpletk/kitex_gen/comment"
-	"github.com/wt993638658/simpletk/kitex_gen/favorite"
-	"github.com/wt993638658/simpletk/kitex_gen/feed"
-	"github.com/wt993638658/simpletk/kitex_gen/message"
-	"github.com/wt993638658/simpletk/kitex_gen/publish"
-	"github.com/wt993638658/simpletk/kitex_gen/relation"
-	"github.com/wt993638658/simpletk/kitex_gen/user"
-	"github.com/wt993638658/simpletk/pkg/errno"
+	"github.com/a76yyyy/tiktok/kitex_gen/comment"
+	"github.com/a76yyyy/tiktok/kitex_gen/favorite"
+	"github.com/a76yyyy/tiktok/kitex_gen/feed"
+	"github.com/a76yyyy/tiktok/kitex_gen/message"
+	"github.com/a76yyyy/tiktok/kitex_gen/publish"
+	"github.com/a76yyyy/tiktok/kitex_gen/relation"
+	"github.com/a76yyyy/tiktok/kitex_gen/user"
+	"github.com/a76yyyy/tiktok/pkg/errno"
 )
 
 // BuilduserRegisterResp build userRegisterResp from error

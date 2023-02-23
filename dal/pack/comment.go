@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 
-	"github.com/wt993638658/simpletk/dal/db"
-	"github.com/wt993638658/simpletk/kitex_gen/comment"
+	"github.com/a76yyyy/tiktok/dal/db"
+	"github.com/a76yyyy/tiktok/kitex_gen/comment"
 	"gorm.io/gorm"
 )
 
