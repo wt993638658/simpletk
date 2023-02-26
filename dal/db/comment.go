@@ -1,19 +1,9 @@
-// Copyright 2022 a76yyyy && CloudWeGo Authors
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-// http://www.apache.org/licenses/LICENSE-2.0
-//
-
-
 package db
 
 import (
 	"context"
 
-	"github.com/a76yyyy/tiktok/pkg/errno"
+	"github.com/wt993638658/simpletk/pkg/errno"
 	"gorm.io/gorm"
 )
 

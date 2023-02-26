@@ -17,6 +17,9 @@ func Init(r *gin.Engine) {
 
 	rpc.InitRPC(&Config)
 	Jwt = jwt.NewJWT([]byte(Config.Viper.GetString("JWT.signingKey")))
+	// public directory is used to serve static resources
+	r.Static("/static", "./public")
+
 	apiRouter := r.Group("/douyin")
 
 	// basic apis
@@ -43,7 +46,7 @@ func Init(r *gin.Engine) {
 }
 
 func main() {
-
+	//go service.RunMessageServer()
 	// 初始化 API 配置
 	r := gin.Default()
 	Init(r)

@@ -12,6 +12,7 @@ Etcd:
 Server:
   Name: "TiktokFeedServer"
   Address: "127.0.0.1"
+  IPAddress: "192.168.43.235"
   Port: 8083
 
 Client:

@@ -2,11 +2,10 @@ package command
 
 import (
 	"context"
-	"time"
-
 	"github.com/wt993638658/simpletk/dal/db"
 	"github.com/wt993638658/simpletk/dal/pack"
 	"github.com/wt993638658/simpletk/kitex_gen/feed"
+	"time"
 )
 
 const (
@@ -23,7 +22,7 @@ func NewGetUserFeedService(ctx context.Context) *GetUserFeedService {
 }
 
 // GetUserFeed get feed info.
-func (s *GetUserFeedService) GetUserFeed(req *feed.DouyinFeedRequest, fromID int64) (vis []*feed.Video, nextTime int64, err error) {
+func (s *GetUserFeedService) GetUserFeed(req *feed.DouyinFeedRequest, fromID int64, ServiceIPAddr string) (vis []*feed.Video, nextTime int64, err error) {
 	videos, err := db.MGetVideos(s.ctx, LIMIT, req.LatestTime)
 	if err != nil {
 		return vis, nextTime, err
@@ -36,7 +35,7 @@ func (s *GetUserFeedService) GetUserFeed(req *feed.DouyinFeedRequest, fromID int
 		nextTime = videos[len(videos)-1].UpdatedAt.UnixMilli()
 	}
 
-	if vis, err = pack.FeedVideos(s.ctx, videos, &fromID); err != nil {
+	if vis, err = pack.Videos(s.ctx, videos, &fromID); err != nil {
 		nextTime = time.Now().UnixMilli()
 		return vis, nextTime, err
 	}

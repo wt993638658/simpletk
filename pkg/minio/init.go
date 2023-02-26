@@ -2,11 +2,11 @@ package minio
 
 import (
 	"context"
-	"github.com/a76yyyy/tiktok/pkg/ttviper"
 	"github.com/cloudwego/kitex/pkg/klog"
 	"github.com/minio/minio-go/v7"
 	"github.com/minio/minio-go/v7/pkg/credentials"
 	"github.com/prometheus/common/log"
+	"github.com/wt993638658/simpletk/pkg/ttviper"
 )
 
 var (

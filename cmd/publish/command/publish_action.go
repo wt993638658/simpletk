@@ -87,12 +87,12 @@ func (s *PublishActionService) PublishAction(req *publish.DouyinPublishActionReq
 	}
 
 	CoverUrl := strings.Split(coverUrl.String(), "?")[0]
-	//CoverUrl = "http://192.168.1.197" + strings.Split(CoverUrl, "localhost")[1]
-	//playUrl = "http://192.168.1.197" + strings.Split(playUrl, "localhost")[1]
-	CoverUrl = "http://192.168.43.235" + strings.Split(CoverUrl, "localhost")[1]
-	playUrl = "http://192.168.43.235" + strings.Split(playUrl, "localhost")[1]
-	//CoverUrl = "http://192.168.0.120" + strings.Split(CoverUrl, "localhost")[1]
-	//playUrl = "http://192.168.0.120" + strings.Split(playUrl, "localhost")[1]
+	////CoverUrl = "http://192.168.1.197" + strings.Split(CoverUrl, "localhost")[1]
+	////playUrl = "http://192.168.1.197" + strings.Split(playUrl, "localhost")[1]
+	//CoverUrl = "http://192.168.43.235" + strings.Split(CoverUrl, "localhost")[1]
+	//playUrl = "http://192.168.43.235" + strings.Split(playUrl, "localhost")[1]
+	////CoverUrl = "http://192.168.31.94" + strings.Split(CoverUrl, "localhost")[1]
+	////playUrl = "http://192.168.31.94" + strings.Split(playUrl, "localhost")[1]
 	videoModel := &db.Video{
 		AuthorID:      uid,
 		PlayUrl:       playUrl,

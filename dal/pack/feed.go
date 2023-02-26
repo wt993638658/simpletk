@@ -1,35 +1,18 @@
-// Copyright 2022 a76yyyy && CloudWeGo Authors
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-// http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
-/*
- * @Author: a76yyyy q981331502@163.com
- * @Date: 2022-06-11 19:25:03
- * @LastEditors: a76yyyy q981331502@163.com
- * @LastEditTime: 2022-06-19 00:41:22
- * @FilePath: /tiktok/dal/pack/feed.go
- * @Description: 封装 Videos 数据库数据为 RPC Server 端响应
- */
-
 package pack
 
 import (
 	"context"
 	"errors"
-
-	"github.com/a76yyyy/tiktok/dal/db"
-	"github.com/a76yyyy/tiktok/kitex_gen/feed"
+	"github.com/wt993638658/simpletk/dal/db"
+	"github.com/wt993638658/simpletk/kitex_gen/feed"
+	"github.com/wt993638658/simpletk/pkg/ttviper"
 	"gorm.io/gorm"
+	"strings"
+)
+
+var (
+	Config        = ttviper.ConfigInit("TIKTOK_FEED", "feedConfig")
+	ServiceIPAddr = Config.Viper.GetString("Server.IPAddress")
 )
 
 // Video pack feed info
@@ -49,11 +32,13 @@ func Video(ctx context.Context, v *db.Video, fromID int64) (*feed.Video, error) 
 	favorite_count := int64(v.FavoriteCount)
 	comment_count := int64(v.CommentCount)
 
+	CoverUrl := "http://" + ServiceIPAddr + strings.Split(v.CoverUrl, "localhost")[1]
+	playUrl := "http://" + ServiceIPAddr + strings.Split(v.PlayUrl, "localhost")[1]
 	return &feed.Video{
 		Id:            int64(v.ID),
 		Author:        author,
-		PlayUrl:       v.PlayUrl,
-		CoverUrl:      v.CoverUrl,
+		PlayUrl:       playUrl,
+		CoverUrl:      CoverUrl,
 		FavoriteCount: favorite_count,
 		CommentCount:  comment_count,
 		Title:         v.Title,

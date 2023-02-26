@@ -4,7 +4,6 @@ import (
 	"context"
 	"fmt"
 	etcd "github.com/a76yyyy/registry-etcd"
-	"github.com/cloudwego/kitex/pkg/klog"
 	"github.com/cloudwego/kitex/pkg/limit"
 	"github.com/cloudwego/kitex/pkg/rpcinfo"
 	"github.com/cloudwego/kitex/server"
@@ -12,7 +11,6 @@ import (
 	"github.com/kitex-contrib/obs-opentelemetry/tracing"
 	"github.com/wt993638658/simpletk/dal"
 	publish "github.com/wt993638658/simpletk/kitex_gen/publish/publishsrv"
-	"github.com/wt993638658/simpletk/pkg/dlog"
 	"github.com/wt993638658/simpletk/pkg/jwt"
 	"github.com/wt993638658/simpletk/pkg/middleware"
 	"github.com/wt993638658/simpletk/pkg/ttviper"
@@ -35,18 +33,18 @@ func Init() {
 
 // Publish RPC Server 端运行
 func main() {
-	var logger = dlog.InitLog(3)
-	defer logger.Sync()
-
-	klog.SetLogger(logger)
+	//var logger = dlog.InitLog(3)
+	//klog.SetLogger(logger)
 
 	r, err := etcd.NewEtcdRegistry([]string{EtcdAddress})
 	if err != nil {
-		klog.Fatal(err)
+		//klog.Fatal(err)
+		fmt.Println(err)
 	}
 	addr, err := net.ResolveTCPAddr("tcp", ServiceAddr)
 	if err != nil {
-		klog.Fatal(err)
+		//klog.Fatal(err)
+		fmt.Println(err)
 	}
 
 	p := provider.NewOpenTelemetryProvider(
@@ -72,6 +70,7 @@ func main() {
 	)
 
 	if err := svr.Run(); err != nil {
-		klog.Fatalf("%s stopped with error:", ServiceName, err)
+		//klog.Fatalf("%s stopped with error:", ServiceName, err)
+		fmt.Println(err)
 	}
 }

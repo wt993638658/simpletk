@@ -3,8 +3,6 @@ package rpc
 import (
 	"context"
 	"fmt"
-	"time"
-
 	etcd "github.com/a76yyyy/registry-etcd"
 	"github.com/cloudwego/kitex/client"
 	"github.com/cloudwego/kitex/pkg/retry"
@@ -16,6 +14,7 @@ import (
 	"github.com/wt993638658/simpletk/pkg/errno"
 	"github.com/wt993638658/simpletk/pkg/middleware"
 	"github.com/wt993638658/simpletk/pkg/ttviper"
+	"time"
 )
 
 var userClient usersrv.Client

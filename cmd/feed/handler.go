@@ -24,13 +24,14 @@ func (s *FeedSrvImpl) GetUserFeed(ctx context.Context, req *feed.DouyinFeedReque
 		}
 	}
 
-	vis, nextTime, err := command.NewGetUserFeedService(ctx).GetUserFeed(req, uid)
+	vis, nextTime, err := command.NewGetUserFeedService(ctx).GetUserFeed(req, uid, ServiceIPAddr)
 	if err != nil {
 		resp = pack.BuildVideoResp(err)
 		return resp, nil
 	}
 
 	resp = pack.BuildVideoResp(errno.Success)
+
 	resp.VideoList = vis
 	resp.NextTime = &nextTime
 	return resp, nil

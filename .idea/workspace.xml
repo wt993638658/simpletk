@@ -5,63 +5,245 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e42f2c29-e0f9-48b1-bb02-78dce0eb9d3a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmd/favorite/command/favorite_action.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmd/favorite/command/favorite_list.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmd/feed/command/feed.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmd/message/command/message_action.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmd/message/command/message_chat.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmd/publish/command/publish_action.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmd/publish/command/publish_list.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmd/relation/command/relation_action.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmd/relation/command/relation_list.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmd/user/command/getUserByID.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmd/user/command/login.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmd/user/command/register.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal/pack/favorite.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal/pack/feed.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal/pack/message.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal/pack/relation.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kitex.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/minio/client/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/minio/client/test.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/minio/init.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/minio/minio_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/minio/test.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/minio/utils.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/bootstrap.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/comment/output/bin/comment" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/comment/output/bootstrap.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/favorite/output/bin/favorite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/favorite/output/bootstrap.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/feed/output/bin/feed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/feed/output/bootstrap.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/message/output/bin/message" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/message/output/bootstrap.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/publish/output/bin/publish" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/publish/output/bootstrap.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/relation/output/bin/relation" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/relation/output/bootstrap.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/user/output/bin/user" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/user/output/bootstrap.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-1/.minio.sys/buckets/.background-heal.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-1/.minio.sys/buckets/.bloomcycle.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-1/.minio.sys/buckets/.tracker.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-1/.minio.sys/buckets/.usage-cache.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-1/.minio.sys/buckets/.usage.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-1/.minio.sys/buckets/tiktok-video/.metadata.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-1/.minio.sys/buckets/tiktok-video/.usage-cache.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-1/.minio.sys/config/config.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-1/.minio.sys/config/iam/format.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-1/.minio.sys/config/iam/sts/C620QLR0UAQJ7WVYV843/identity.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-1/.minio.sys/format.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-1/.minio.sys/pool.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-1/tiktok-video/10486d76-0856-446b-a523-e3709b77ec32.mp4/b693ac42-0714-4c94-945b-d702aa73783f/part.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-1/tiktok-video/10486d76-0856-446b-a523-e3709b77ec32.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-1/tiktok-video/3ca19ec8-daf4-4369-acd7-0f4f8268339c.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-1/tiktok-video/71c0f987-976d-42c5-bdb8-876d3b36b8f3.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-1/tiktok-video/7e5e88e1-618a-4499-8ba4-98530b7bdce7.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-1/tiktok-video/9a543692-dc33-429a-a269-f12df87b9650.mp4/0f9b1e8c-88bc-4258-a772-9ea5643a0438/part.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-1/tiktok-video/9a543692-dc33-429a-a269-f12df87b9650.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-1/tiktok-video/b6e3971e-4d8f-45be-8f05-dd2f6a6b32c3.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-1/tiktok-video/be70548f-aa8a-4d9d-9c83-d550e82aab14.mp4/657e13b7-b770-43a9-a5e7-26ffe0170548/part.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-1/tiktok-video/be70548f-aa8a-4d9d-9c83-d550e82aab14.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-1/tiktok-video/d0d6b2b8-a291-414a-ae0e-d6126a1345ce.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-2/.minio.sys/buckets/.background-heal.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-2/.minio.sys/buckets/.bloomcycle.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-2/.minio.sys/buckets/.tracker.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-2/.minio.sys/buckets/.usage-cache.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-2/.minio.sys/buckets/.usage.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-2/.minio.sys/buckets/tiktok-video/.metadata.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-2/.minio.sys/buckets/tiktok-video/.usage-cache.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-2/.minio.sys/config/config.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-2/.minio.sys/config/iam/format.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-2/.minio.sys/config/iam/sts/C620QLR0UAQJ7WVYV843/identity.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-2/.minio.sys/format.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-2/.minio.sys/pool.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-2/tiktok-video/10486d76-0856-446b-a523-e3709b77ec32.mp4/b693ac42-0714-4c94-945b-d702aa73783f/part.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-2/tiktok-video/10486d76-0856-446b-a523-e3709b77ec32.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-2/tiktok-video/3ca19ec8-daf4-4369-acd7-0f4f8268339c.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-2/tiktok-video/71c0f987-976d-42c5-bdb8-876d3b36b8f3.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-2/tiktok-video/7e5e88e1-618a-4499-8ba4-98530b7bdce7.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-2/tiktok-video/9a543692-dc33-429a-a269-f12df87b9650.mp4/0f9b1e8c-88bc-4258-a772-9ea5643a0438/part.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-2/tiktok-video/9a543692-dc33-429a-a269-f12df87b9650.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-2/tiktok-video/b6e3971e-4d8f-45be-8f05-dd2f6a6b32c3.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-2/tiktok-video/be70548f-aa8a-4d9d-9c83-d550e82aab14.mp4/657e13b7-b770-43a9-a5e7-26ffe0170548/part.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-2/tiktok-video/be70548f-aa8a-4d9d-9c83-d550e82aab14.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data1-2/tiktok-video/d0d6b2b8-a291-414a-ae0e-d6126a1345ce.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-1/.minio.sys/buckets/.background-heal.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-1/.minio.sys/buckets/.bloomcycle.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-1/.minio.sys/buckets/.tracker.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-1/.minio.sys/buckets/.usage-cache.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-1/.minio.sys/buckets/.usage.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-1/.minio.sys/buckets/tiktok-video/.metadata.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-1/.minio.sys/buckets/tiktok-video/.usage-cache.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-1/.minio.sys/config/config.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-1/.minio.sys/config/iam/format.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-1/.minio.sys/config/iam/sts/C620QLR0UAQJ7WVYV843/identity.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-1/.minio.sys/format.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-1/.minio.sys/pool.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-1/tiktok-video/10486d76-0856-446b-a523-e3709b77ec32.mp4/b693ac42-0714-4c94-945b-d702aa73783f/part.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-1/tiktok-video/10486d76-0856-446b-a523-e3709b77ec32.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-1/tiktok-video/3ca19ec8-daf4-4369-acd7-0f4f8268339c.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-1/tiktok-video/71c0f987-976d-42c5-bdb8-876d3b36b8f3.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-1/tiktok-video/7e5e88e1-618a-4499-8ba4-98530b7bdce7.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-1/tiktok-video/9a543692-dc33-429a-a269-f12df87b9650.mp4/0f9b1e8c-88bc-4258-a772-9ea5643a0438/part.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-1/tiktok-video/9a543692-dc33-429a-a269-f12df87b9650.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-1/tiktok-video/b6e3971e-4d8f-45be-8f05-dd2f6a6b32c3.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-1/tiktok-video/be70548f-aa8a-4d9d-9c83-d550e82aab14.mp4/657e13b7-b770-43a9-a5e7-26ffe0170548/part.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-1/tiktok-video/be70548f-aa8a-4d9d-9c83-d550e82aab14.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-1/tiktok-video/d0d6b2b8-a291-414a-ae0e-d6126a1345ce.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-2/.minio.sys/buckets/.background-heal.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-2/.minio.sys/buckets/.bloomcycle.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-2/.minio.sys/buckets/.tracker.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-2/.minio.sys/buckets/.usage-cache.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-2/.minio.sys/buckets/.usage.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-2/.minio.sys/buckets/tiktok-video/.metadata.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-2/.minio.sys/buckets/tiktok-video/.usage-cache.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-2/.minio.sys/config/config.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-2/.minio.sys/config/iam/format.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-2/.minio.sys/config/iam/sts/C620QLR0UAQJ7WVYV843/identity.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-2/.minio.sys/format.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-2/.minio.sys/pool.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-2/tiktok-video/10486d76-0856-446b-a523-e3709b77ec32.mp4/b693ac42-0714-4c94-945b-d702aa73783f/part.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-2/tiktok-video/10486d76-0856-446b-a523-e3709b77ec32.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-2/tiktok-video/3ca19ec8-daf4-4369-acd7-0f4f8268339c.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-2/tiktok-video/71c0f987-976d-42c5-bdb8-876d3b36b8f3.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-2/tiktok-video/7e5e88e1-618a-4499-8ba4-98530b7bdce7.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-2/tiktok-video/9a543692-dc33-429a-a269-f12df87b9650.mp4/0f9b1e8c-88bc-4258-a772-9ea5643a0438/part.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-2/tiktok-video/9a543692-dc33-429a-a269-f12df87b9650.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-2/tiktok-video/b6e3971e-4d8f-45be-8f05-dd2f6a6b32c3.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-2/tiktok-video/be70548f-aa8a-4d9d-9c83-d550e82aab14.mp4/657e13b7-b770-43a9-a5e7-26ffe0170548/part.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-2/tiktok-video/be70548f-aa8a-4d9d-9c83-d550e82aab14.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data2-2/tiktok-video/d0d6b2b8-a291-414a-ae0e-d6126a1345ce.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-1/.minio.sys/buckets/.background-heal.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-1/.minio.sys/buckets/.bloomcycle.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-1/.minio.sys/buckets/.tracker.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-1/.minio.sys/buckets/.usage-cache.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-1/.minio.sys/buckets/.usage.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-1/.minio.sys/buckets/tiktok-video/.metadata.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-1/.minio.sys/buckets/tiktok-video/.usage-cache.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-1/.minio.sys/config/config.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-1/.minio.sys/config/iam/format.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-1/.minio.sys/config/iam/sts/C620QLR0UAQJ7WVYV843/identity.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-1/.minio.sys/format.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-1/.minio.sys/pool.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-1/tiktok-video/10486d76-0856-446b-a523-e3709b77ec32.mp4/b693ac42-0714-4c94-945b-d702aa73783f/part.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-1/tiktok-video/10486d76-0856-446b-a523-e3709b77ec32.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-1/tiktok-video/3ca19ec8-daf4-4369-acd7-0f4f8268339c.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-1/tiktok-video/71c0f987-976d-42c5-bdb8-876d3b36b8f3.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-1/tiktok-video/7e5e88e1-618a-4499-8ba4-98530b7bdce7.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-1/tiktok-video/9a543692-dc33-429a-a269-f12df87b9650.mp4/0f9b1e8c-88bc-4258-a772-9ea5643a0438/part.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-1/tiktok-video/9a543692-dc33-429a-a269-f12df87b9650.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-1/tiktok-video/b6e3971e-4d8f-45be-8f05-dd2f6a6b32c3.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-1/tiktok-video/be70548f-aa8a-4d9d-9c83-d550e82aab14.mp4/657e13b7-b770-43a9-a5e7-26ffe0170548/part.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-1/tiktok-video/be70548f-aa8a-4d9d-9c83-d550e82aab14.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-1/tiktok-video/d0d6b2b8-a291-414a-ae0e-d6126a1345ce.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-2/.minio.sys/buckets/.background-heal.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-2/.minio.sys/buckets/.bloomcycle.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-2/.minio.sys/buckets/.tracker.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-2/.minio.sys/buckets/.usage-cache.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-2/.minio.sys/buckets/.usage.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-2/.minio.sys/buckets/tiktok-video/.metadata.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-2/.minio.sys/buckets/tiktok-video/.usage-cache.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-2/.minio.sys/config/config.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-2/.minio.sys/config/iam/format.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-2/.minio.sys/config/iam/sts/C620QLR0UAQJ7WVYV843/identity.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-2/.minio.sys/format.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-2/.minio.sys/pool.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-2/tiktok-video/10486d76-0856-446b-a523-e3709b77ec32.mp4/b693ac42-0714-4c94-945b-d702aa73783f/part.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-2/tiktok-video/10486d76-0856-446b-a523-e3709b77ec32.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-2/tiktok-video/3ca19ec8-daf4-4369-acd7-0f4f8268339c.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-2/tiktok-video/71c0f987-976d-42c5-bdb8-876d3b36b8f3.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-2/tiktok-video/7e5e88e1-618a-4499-8ba4-98530b7bdce7.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-2/tiktok-video/9a543692-dc33-429a-a269-f12df87b9650.mp4/0f9b1e8c-88bc-4258-a772-9ea5643a0438/part.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-2/tiktok-video/9a543692-dc33-429a-a269-f12df87b9650.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-2/tiktok-video/b6e3971e-4d8f-45be-8f05-dd2f6a6b32c3.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-2/tiktok-video/be70548f-aa8a-4d9d-9c83-d550e82aab14.mp4/657e13b7-b770-43a9-a5e7-26ffe0170548/part.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-2/tiktok-video/be70548f-aa8a-4d9d-9c83-d550e82aab14.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data3-2/tiktok-video/d0d6b2b8-a291-414a-ae0e-d6126a1345ce.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-1/.minio.sys/buckets/.background-heal.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-1/.minio.sys/buckets/.bloomcycle.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-1/.minio.sys/buckets/.tracker.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-1/.minio.sys/buckets/.usage-cache.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-1/.minio.sys/buckets/.usage.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-1/.minio.sys/buckets/tiktok-video/.metadata.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-1/.minio.sys/buckets/tiktok-video/.usage-cache.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-1/.minio.sys/config/config.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-1/.minio.sys/config/iam/format.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-1/.minio.sys/config/iam/sts/C620QLR0UAQJ7WVYV843/identity.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-1/.minio.sys/format.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-1/.minio.sys/pool.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-1/tiktok-video/10486d76-0856-446b-a523-e3709b77ec32.mp4/b693ac42-0714-4c94-945b-d702aa73783f/part.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-1/tiktok-video/10486d76-0856-446b-a523-e3709b77ec32.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-1/tiktok-video/3ca19ec8-daf4-4369-acd7-0f4f8268339c.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-1/tiktok-video/71c0f987-976d-42c5-bdb8-876d3b36b8f3.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-1/tiktok-video/7e5e88e1-618a-4499-8ba4-98530b7bdce7.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-1/tiktok-video/9a543692-dc33-429a-a269-f12df87b9650.mp4/0f9b1e8c-88bc-4258-a772-9ea5643a0438/part.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-1/tiktok-video/9a543692-dc33-429a-a269-f12df87b9650.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-1/tiktok-video/b6e3971e-4d8f-45be-8f05-dd2f6a6b32c3.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-1/tiktok-video/be70548f-aa8a-4d9d-9c83-d550e82aab14.mp4/657e13b7-b770-43a9-a5e7-26ffe0170548/part.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-1/tiktok-video/be70548f-aa8a-4d9d-9c83-d550e82aab14.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-1/tiktok-video/d0d6b2b8-a291-414a-ae0e-d6126a1345ce.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-2/.minio.sys/buckets/.background-heal.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-2/.minio.sys/buckets/.bloomcycle.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-2/.minio.sys/buckets/.tracker.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-2/.minio.sys/buckets/.usage-cache.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-2/.minio.sys/buckets/.usage.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-2/.minio.sys/buckets/tiktok-video/.metadata.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-2/.minio.sys/buckets/tiktok-video/.usage-cache.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-2/.minio.sys/config/config.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-2/.minio.sys/config/iam/format.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-2/.minio.sys/config/iam/sts/C620QLR0UAQJ7WVYV843/identity.json/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-2/.minio.sys/format.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-2/.minio.sys/pool.bin/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-2/tiktok-video/10486d76-0856-446b-a523-e3709b77ec32.mp4/b693ac42-0714-4c94-945b-d702aa73783f/part.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-2/tiktok-video/10486d76-0856-446b-a523-e3709b77ec32.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-2/tiktok-video/3ca19ec8-daf4-4369-acd7-0f4f8268339c.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-2/tiktok-video/71c0f987-976d-42c5-bdb8-876d3b36b8f3.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-2/tiktok-video/7e5e88e1-618a-4499-8ba4-98530b7bdce7.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-2/tiktok-video/9a543692-dc33-429a-a269-f12df87b9650.mp4/0f9b1e8c-88bc-4258-a772-9ea5643a0438/part.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-2/tiktok-video/9a543692-dc33-429a-a269-f12df87b9650.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-2/tiktok-video/b6e3971e-4d8f-45be-8f05-dd2f6a6b32c3.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-2/tiktok-video/be70548f-aa8a-4d9d-9c83-d550e82aab14.mp4/657e13b7-b770-43a9-a5e7-26ffe0170548/part.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-2/tiktok-video/be70548f-aa8a-4d9d-9c83-d550e82aab14.mp4/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data4-2/tiktok-video/d0d6b2b8-a291-414a-ae0e-d6126a1345ce.jpg/xl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/dlog/encoder_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/dlog/log_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/dlog/zapgorm2_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/ttviper/config_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/favorite/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/favorite/handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/favorite/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/favorite/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/api/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/api/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/api/rpc/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/api/rpc/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/api/rpc/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/api/rpc/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/favorite/command/favorite_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/favorite/command/favorite_list.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/feed/command/feed.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/feed/command/feed.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/feed/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/feed/handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/feed/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/feed/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/message/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/message/handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/message/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/message/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/publish/command/publish_action.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/publish/command/publish_action.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/publish/command/publish_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/publish/command/publish_list.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/publish/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/publish/handler.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/publish/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/publish/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/relation/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/relation/handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/relation/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/relation/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/user/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/user/handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/user/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/user/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/feedConfig.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/feedConfig.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dal/db/comment.go" beforeDir="false" afterPath="$PROJECT_DIR$/dal/db/comment.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dal/db/favorite.go" beforeDir="false" afterPath="$PROJECT_DIR$/dal/db/favorite.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dal/db/feed.go" beforeDir="false" afterPath="$PROJECT_DIR$/dal/db/feed.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dal/db/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/dal/db/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dal/db/relation.go" beforeDir="false" afterPath="$PROJECT_DIR$/dal/db/relation.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dal/db/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/dal/db/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dal/pack/comment.go" beforeDir="false" afterPath="$PROJECT_DIR$/dal/pack/comment.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dal/pack/favorite.go" beforeDir="false" afterPath="$PROJECT_DIR$/dal/pack/favorite.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dal/pack/feed.go" beforeDir="false" afterPath="$PROJECT_DIR$/dal/pack/feed.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dal/pack/message.go" beforeDir="false" afterPath="$PROJECT_DIR$/dal/pack/message.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dal/pack/relation.go" beforeDir="false" afterPath="$PROJECT_DIR$/dal/pack/relation.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dal/pack/resp.go" beforeDir="false" afterPath="$PROJECT_DIR$/dal/pack/resp.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dal/pack/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/dal/pack/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idl/comment.thrift" beforeDir="false" afterPath="$PROJECT_DIR$/idl/comment.thrift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idl/favorite.thrift" beforeDir="false" afterPath="$PROJECT_DIR$/idl/favorite.thrift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idl/feed.thrift" beforeDir="false" afterPath="$PROJECT_DIR$/idl/feed.thrift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idl/publish.thrift" beforeDir="false" afterPath="$PROJECT_DIR$/idl/publish.thrift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kitex_gen/comment/comment.go" beforeDir="false" afterPath="$PROJECT_DIR$/kitex_gen/comment/comment.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kitex_gen/comment/k-comment.go" beforeDir="false" afterPath="$PROJECT_DIR$/kitex_gen/comment/k-comment.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kitex_gen/favorite/favorite.go" beforeDir="false" afterPath="$PROJECT_DIR$/kitex_gen/favorite/favorite.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kitex_gen/favorite/k-favorite.go" beforeDir="false" afterPath="$PROJECT_DIR$/kitex_gen/favorite/k-favorite.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kitex_gen/feed/feed.go" beforeDir="false" afterPath="$PROJECT_DIR$/kitex_gen/feed/feed.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kitex_gen/feed/k-feed.go" beforeDir="false" afterPath="$PROJECT_DIR$/kitex_gen/feed/k-feed.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kitex_gen/publish/k-publish.go" beforeDir="false" afterPath="$PROJECT_DIR$/kitex_gen/publish/k-publish.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kitex_gen/publish/publish.go" beforeDir="false" afterPath="$PROJECT_DIR$/kitex_gen/publish/publish.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handler.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kitex.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/errno/errno.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/errno/errno.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/middleware/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/middleware/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/minio/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/minio/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/minio/minio_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/ttviper/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/ttviper/config.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,23 +287,40 @@
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/taowei/Desktop/go/simpletk/dal",
+    "last_opened_file_path": "/Users/taowei/Desktop/go/simpletk",
     "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)"
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/dal" />
-      <recent name="$PROJECT_DIR$/cmd/user" />
-      <recent name="$PROJECT_DIR$/dal/pack" />
-      <recent name="$PROJECT_DIR$/cmd/relation" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/cmd" />
+      <recent name="$PROJECT_DIR$/dal/db" />
       <recent name="$PROJECT_DIR$/pkg" />
+      <recent name="$PROJECT_DIR$/dal" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/cmd/api" />
       <recent name="$PROJECT_DIR$/pkg/errno" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="simpletk" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="github.com/wt993638658/simpletk" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/cmd/api/main.go" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">

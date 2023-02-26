@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"github.com/wt993638658/simpletk/cmd/publish/command"
 	"github.com/wt993638658/simpletk/dal/pack"
-	publish "github.com/wt993638658/simpletk/kitex_gen/publish"
+	"github.com/wt993638658/simpletk/kitex_gen/publish"
 	"github.com/wt993638658/simpletk/pkg/errno"
 )
 

@@ -3,7 +3,7 @@ package db
 import (
 	"context"
 
-	"github.com/a76yyyy/tiktok/pkg/errno"
+	"github.com/wt993638658/simpletk/pkg/errno"
 	"gorm.io/gorm"
 )
 

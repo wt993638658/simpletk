@@ -3,14 +3,15 @@ package ttviper
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/cloudwego/kitex/pkg/klog"
-	"github.com/fsnotify/fsnotify"
-	"github.com/spf13/pflag"
-	"github.com/spf13/viper"
 	"net/url"
 	"path/filepath"
 	"strings"
 	"time"
+
+	"github.com/cloudwego/kitex/pkg/klog"
+	"github.com/fsnotify/fsnotify"
+	"github.com/spf13/pflag"
+	"github.com/spf13/viper"
 )
 
 // Config
@@ -21,28 +22,27 @@ type Config struct {
 var (
 	configVar      string
 	isRemoteConfig bool
-	//	GlobalSource   = pflag.String("global.source", "default(flag)", "identify the source of configuration")
-	//	GlobalUnset = pflag.String("global.unset", "", "this parameter do not appear in config file")
+
+	//GlobalSource = pflag.String("global.source", "default(flag)", "identify the source of configuration")
+	// var globalUnset = pflag.String("global.unset", "default(flag)", "this parameter do not appear in config file")
+	//GlobalUnset = pflag.String("global.unset", "", "this parameter do not appear in config file")
 )
 
-// /*
-//
-//	configVar 采用了另一种方式来初始化
-//	主要是为了强调这个命令行参数的特殊性，这个参数是需要在代码中直接引用的
-//	其他参数是跟viper绑定的，不会直接使用，而是通过viper.GetType()来获取
-//
-//	另外一个原因是，plfag.String()返回的是*string，用起来没那么直观
-//
-// */
-//
-// // Viper 配置存取初始化
-//
-//	func init() {
-//		pflag.StringVar(&configVar, "config", "", "Config file path")
-//		pflag.BoolVar(&isRemoteConfig, "isRemoteConfig", false, "Whether to choose remote config")
-//	}
-//
-// // SetRemoteConfig sets the config from remote.
+/*
+	configVar 采用了另一种方式来初始化
+	主要是为了强调这个命令行参数的特殊性，这个参数是需要在代码中直接引用的
+	其他参数是跟viper绑定的，不会直接使用，而是通过viper.GetType()来获取
+
+	另外一个原因是，plfag.String()返回的是*string，用起来没那么直观
+*/
+
+// Viper 配置存取初始化
+func init() {
+	pflag.StringVar(&configVar, "config", "", "Config file path")
+	pflag.BoolVar(&isRemoteConfig, "isRemoteConfig", false, "Whether to choose remote config")
+}
+
+// SetRemoteConfig sets the config from remote.
 func (v *Config) SetRemoteConfig(u *url.URL) {
 	/*
 		这里接受etcd 或 consul 的url
@@ -108,7 +108,6 @@ func (v *Config) SetDefaultValue() {
 }
 
 // WatchRemoteConf watch the configuration of the remote provider and
-
 func (v *Config) WatchRemoteConf() {
 	for {
 		time.Sleep(time.Second * 5) // delay after each request
@@ -130,7 +129,6 @@ func (v *Config) WatchRemoteConf() {
 }
 
 // ZapLogConfig 读取Log的配置文件，并返回
-
 func (v *Config) ZapLogConfig() []byte {
 	log := v.Viper.Sub("Log")
 	logConfig, err := json.Marshal(log.AllSettings())

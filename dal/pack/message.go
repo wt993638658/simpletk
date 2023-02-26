@@ -1,10 +1,10 @@
 package pack
 
 import (
-	"github.com/a76yyyy/tiktok/kitex_gen/message"
+	"github.com/wt993638658/simpletk/kitex_gen/message"
 	"sync/atomic"
 
-	"github.com/a76yyyy/tiktok/dal/db"
+	"github.com/wt993638658/simpletk/dal/db"
 )
 
 var messageIdSequence = int64(1)
